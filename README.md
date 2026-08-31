@@ -1,12 +1,12 @@
-#**Sistema de Gestión y Control para Espacios de Estacionamiento** (H1)
+# **Sistema de Gestión y Control para Espacios de Estacionamiento**
 
-**Descripción del proyecto**
+## **Descripción del proyecto**
 
 El **Sistema de Gestión y Control para Espacios de Estacionamiento** utiliza tecnologías de IoT, sensores y/o visión artificial.
 
 El cual permite identificar los espacios que se encuentran disponibles u ocupados por vehículos, lo cual proporciona información actualizada sobre la disponibilidad del estacionamiento.
 
-**Propósito**
+## **Propósito**
 
 El propósito principal del proyecto es proporcionar una administración de espacios disponibles que se encuentran dentro de un estacionamiento mediante un sistema automatizado. 
 
