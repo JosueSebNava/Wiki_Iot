@@ -41,18 +41,18 @@ Dependiendo de la implementación final, la detección podrá realizarse mediant
 
 Cuando el vehículo ha sido detectado dentro del espacio, el sistema lo mostrará como **OCUPADO**, pero si no se encuentra ningún vehículo, el espacio será marcado como **LIBRE**.
 
-## **Flujo general**
+## **Flujo general del sistema**
 
-Vehículo
-   ↓
-Sensor / Cámara
-   ↓
-Detección de vehículo
-   ↓
-ESP32 / Sistema de procesamiento
-   ↓
-Clasificación del espacio
-   ↓
-LIBRE / OCUPADO
-   ↓
-Visualización de disponibilidad
+El sistema funciona mediante el siguiente flujo:
+
+```mermaid
+flowchart TD
+    A[Vehículo] --> B[Sensor / Cámara]
+    B --> C[Detección de vehículo]
+    C --> D[ESP32 / Sistema de procesamiento]
+    D --> E[Clasificación del espacio]
+    E --> F{Estado del espacio}
+    F --> G[LIBRE]
+    F --> H[OCUPADO]
+    G --> I[Visualización de disponibilidad]
+    H --> I[Visualización de disponibilidad]
