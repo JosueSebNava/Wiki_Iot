@@ -22,13 +22,8 @@ En la actualidad, muchos conductores recorren diferentes áreas para encontrar u
 
 Este proyecto permite solucionar este problema mediante la detección automática de vehículos y el procesamiento de la información obtenida por sensores y/o cámaras.
 
-## **Problemas que resuelve**
-
-1. Dificultad para localizar espacios disponibles.
-2. Tiempo perdido buscando un lugar de estacionamiento.
-3. Falta de información en tiempo real sobre los espacios disponibles.
-4. Administración manual de los espacios.
-5. Uso poco eficiente de las áreas disponibles.
+## **Problematica**
+En los grandes complejos comerciales e infraestructuras de estacionamiento multinivel, la búsqueda de espacios disponibles genera una ineficiencia operativa crítica en la movilidad vehicular. Debido a la extensión de los pasillos y a la falta de señalización o información centralizada en tiempo real, los conductores se ven obligados a realizar recorridos a ciegas y a baja velocidad para localizar un lugar desocupado, priorizando las zonas más cercanas a los accesos principales.
 
 ## **Funcionamiento**
 
@@ -116,6 +111,3 @@ Espacio 5 → LIBRE
 1. Espacios disponibles: 3
 2. Espacios ocupados: 2
 ```
-
-## **PROBLEMATICA**
-En los grandes complejos comerciales e infraestructuras de estacionamiento multinivel, la búsqueda de espacios disponibles genera una ineficiencia operativa crítica en la movilidad vehicular. Debido a la extensión de los pasillos y a la falta de señalización o información centralizada en tiempo real, los conductores se ven obligados a realizar recorridos a ciegas y a baja velocidad para localizar un lugar desocupado, priorizando las zonas más cercanas a las accesos principales.
