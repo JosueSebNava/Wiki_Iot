@@ -57,3 +57,30 @@ F --> H[OCUPADO]
 G --> I[Visualización de disponibilidad]
 H --> I[Visualización de disponibilidad]
 ~~~
+
+
+## Componentes principales
+
+### Hardware
+
+- **ESP32**
+- **HC-SR04**
+- **LEDs**
+- **Resistencias**
+- **Protoboard**
+- **Cables Dupont**
+- **Fuente de alimentación**
+
+### Software
+
+- **Arduino IDE**
+- **Mosquitto**
+- **Spring Boot**
+- **PostgreSQL**
+- **Frontend web**
+
+### Tecnologías de comunicación
+
+- **Wi-Fi**
+- **MQTT**
+- **HTTP/REST**
