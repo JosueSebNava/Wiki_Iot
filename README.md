@@ -10,9 +10,7 @@
 
 ## **Descripción del proyecto**
 
-El **Sistema de Gestión y Control para Espacios de Estacionamiento** utiliza tecnologías de IoT, sensores y/o visión artificial.
-
-El cual permite identificar los espacios que se encuentran disponibles u ocupados por vehículos, lo cual proporciona información actualizada sobre la disponibilidad del estacionamiento.
+El **Sistema de Gestión y Control para Espacios de Estacionamiento** consiste en el desarrollo de una solución tecnológica que se basa en el concepto de IoT, el cual tiene como propósito automatizar la supervisión y administración de espacios que se encuentran en un estacionamiento. Asimismo, el sistema a desarrollar permitirá detectar de manera automática la presencia de vehículos en los diferentes espacios de estacionamiento. Para realizarlo, se hace uso de sensores de distancia y/o cámaras, dependiendo de la implementación final del prototipo. La información recolectada será enviada a un sistema de control, considerando el uso de un microcontrolador **ESP32** para la adquisición y procesamiento de datos.
 
 ## **Propósito**
 
