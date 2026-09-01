@@ -104,6 +104,7 @@ Espacio 3 → LIBRE
 
 Espacio 4 → OCUPADO
 Espacio 5 → LIBRE
+```
 
 
 1. Espacios disponibles: 3
