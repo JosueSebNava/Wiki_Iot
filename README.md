@@ -52,16 +52,15 @@ H --> I[Visualización de disponibilidad]
 ```
 
 ## **Objetivo general**
-Diseñar un sistema IoT que sea capaz de detectar y administrar de forma autónoma la disponibilidad de los espacios de un estacionamiento, proporcionando información en tiempo real sobre los lugares disponibles y ocupados.
+Diseñar un sistema IoT que sea capaz de detectar, clasificar y administrar de forma autónoma la disponibilidad de los espacios de un estacionamiento, mediante uso de sensores, proporcionando información en tiempo real sobre los lugares disponibles y ocupados para optimizar la busqueda de estacionamiento y una mejora en la administracion de los espacios disponibles.
 
 ## **Objetivos especificos**
 
-1. Detectar vehículos en los espacios de estacionamiento.
-2. Identificar si existe un espacio disponible u ocupado.
-3. Procesar la información mediante un sistema de control.
-4. Mostrar disponibilidad de los espacios.
-5. Reducir el tiempo para hallar un lugar disponible.
-6. Implementar nuevas tecnologías relacionadas con IoT y automatización.
+1. Detectar vehículos en los espacios de estacionamiento a traves de sensores.
+2. Procesar los datos obtenidos para identificar si existe un espacio disponible u ocupado.
+3. Implementar una ESP32 como sistema de control para procesar la información.
+5. Reducir el tiempo para hallar un lugar disponible en el estacionamiento.
+6. Evaluar funcionamiento del prototipo a partir de pruebas de detección de espacios.
 
 
 ## **Componentes principales**
