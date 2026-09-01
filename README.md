@@ -40,7 +40,7 @@ Cuando el vehículo ha sido detectado dentro del espacio, el sistema lo mostrar�
 
 El sistema funciona mediante el siguiente flujo:
 
-~~~mermaid
+```mermaid
 flowchart TD
 A[Vehículo] --> B[Sensor / Cámara]
 B --> C[Detección de vehículo]
@@ -51,7 +51,7 @@ F --> G[LIBRE]
 F --> H[OCUPADO]
 G --> I[Visualización de disponibilidad]
 H --> I[Visualización de disponibilidad]
-~~~
+```
 
 ## **Objetivo general**
 Diseñar un sistema IoT que sea capaz de detectar y administrar de forma autónoma la disponibilidad de los espacios de un estacionamiento, proporcionando información en tiempo real sobre los lugares disponibles y ocupados.
