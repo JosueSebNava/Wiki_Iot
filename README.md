@@ -58,8 +58,20 @@ G --> I[Visualización de disponibilidad]
 H --> I[Visualización de disponibilidad]
 ~~~
 
+## **Objetivo general**
+Diseñar un sistema IoT que sea capaz de detectar y administrar de forma autónoma la disponibilidad de los espacios de un estacionamiento, proporcionando información en tiempo real sobre los lugares disponibles y ocupados.
 
-## Componentes principales
+## **Objetivos especificos**
+
+1. Detectar vehículos en los espacios de estacionamiento.
+2. Identificar si existe un espacio disponible u ocupado.
+3. Procesar la información mediante un sistema de control.
+4. Mostrar disponibilidad de los espacios.
+5. Reducir el tiempo para hallar un lugar disponible.
+6. Implementar nuevas tecnologías relacionadas con IoT y automatización.
+
+
+## **Componentes principales**
 
 ### Hardware
 
@@ -84,3 +96,20 @@ H --> I[Visualización de disponibilidad]
 - **Wi-Fi**
 - **MQTT**
 - **HTTP/REST**
+
+## **Resultado esperado**
+
+Se espera en el prototipo logre mostrar en tiempo real estado de los espacios del estacionamiento.
+
+```text
+ESTACIONAMIENTO
+
+Espacio 1 → LIBRE
+Espacio 2 → OCUPADO
+Espacio 3 → LIBRE
+Espacio 4 → OCUPADO
+Espacio 5 → LIBRE
+```
+
+Espacios disponibles: 3
+Espacios ocupados: 2
