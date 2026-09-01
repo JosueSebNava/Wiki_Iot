@@ -107,9 +107,15 @@ ESTACIONAMIENTO
 Espacio 1 → LIBRE
 Espacio 2 → OCUPADO
 Espacio 3 → LIBRE
+
+
 Espacio 4 → OCUPADO
 Espacio 5 → LIBRE
-```
+
 
 1. Espacios disponibles: 3
 2. Espacios ocupados: 2
+```
+
+PROBLEMATICA
+En los grandes complejos comerciales e infraestructuras de estacionamiento multinivel, la búsqueda de espacios disponibles genera una ineficiencia operativa crítica en la movilidad vehicular. Debido a la extensión de los pasillos y a la falta de señalización o información centralizada en tiempo real, los conductores se ven obligados a realizar recorridos a ciegas y a baja velocidad para localizar un lugar desocupado, priorizando las zonas más cercanas a las accesos principales.
