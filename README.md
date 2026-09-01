@@ -1,6 +1,6 @@
-# Sistema de Gestión y Control para Espacios de Estacionamiento
+# **Sistema de Gestión y Control para Espacios de Estacionamiento**
 
-## Integrantes
+## **Integrantes**
 
 1. Jonathan Madriz Sánchez
 2. Luis Enrique Carmona Villafaña
@@ -8,67 +8,52 @@
 4. Enrique Cruz Jiménez
 5. Josué Sebastián Navarrete Garcia
 
-## Descripción del proyecto
+## **Descripción del proyecto**
 
-SmartPark es un sistema de estacionamiento inteligente que utiliza tecnologías IoT, sensores y microcontroladores ESP32 para identificar los espacios disponibles u ocupados por vehículos.
+El **Sistema de Gestión y Control para Espacios de Estacionamiento** utiliza tecnologías de IoT, sensores y/o visión artificial.
 
-El sistema proporciona información actualizada sobre la disponibilidad del estacionamiento mediante una interfaz web.
+El cual permite identificar los espacios que se encuentran disponibles u ocupados por vehículos, lo cual proporciona información actualizada sobre la disponibilidad del estacionamiento.
 
-## Propósito
+## **Propósito**
 
-El propósito principal del proyecto es administrar los espacios disponibles dentro de un estacionamiento mediante un sistema automatizado.
+El propósito principal del proyecto es proporcionar una administración de espacios disponibles que se encuentran dentro de un estacionamiento mediante un sistema automatizado.
 
-Muchos conductores recorren diferentes áreas para encontrar un espacio disponible. Esto puede provocar pérdida de tiempo, congestión y un uso poco eficiente de los espacios.
+En la actualidad, muchos conductores recorren diferentes áreas para encontrar un espacio disponible. Lo cual puede provocar una pérdida de tiempo, congestión y uso poco eficiente de los espacios.
 
-SmartPark busca solucionar este problema mediante la detección automática de vehículos y el procesamiento de la información obtenida por sensores.
+Este proyecto permite solucionar este problema mediante la detección automática de vehículos y el procesamiento de la información obtenida por sensores y/o cámaras.
 
-## Problemas que resuelve
+## **Problemas que resuelve**
 
-- Dificultad para localizar espacios disponibles.
-- Tiempo perdido buscando un lugar de estacionamiento.
-- Falta de información en tiempo real sobre los espacios disponibles.
-- Administración manual de los espacios.
-- Uso poco eficiente de las áreas disponibles.
+1. Dificultad para localizar espacios disponibles.
+2. Tiempo perdido buscando un lugar de estacionamiento.
+3. Falta de información en tiempo real sobre los espacios disponibles.
+4. Administración manual de los espacios.
+5. Uso poco eficiente de las áreas disponibles.
 
-## Funcionamiento
+## **Funcionamiento**
 
-En el prototipo, el sensor HC-SR04 detecta la presencia de un vehículo en cada espacio de estacionamiento.
+Dependiendo de la implementación final, la detección podrá realizarse mediante:
 
-1. El sensor realiza una medición de distancia.
-2. El ESP32 interpreta la medición y clasifica el espacio como **LIBRE** u **OCUPADO**.
-3. El ESP32 transmite el estado mediante Wi-Fi y MQTT.
-4. El broker Mosquitto distribuye el mensaje al backend.
-5. Spring Boot procesa la información.
-6. PostgreSQL almacena los datos.
-7. El dashboard muestra la disponibilidad actualizada.
+1. Sensores de distancia o presencia.
+2. Cámara.
+3. Visión artificial.
+4. Procesamiento de imágenes.
 
-## Flujo general del sistema
+Cuando el vehículo ha sido detectado dentro del espacio, el sistema lo mostrará como **OCUPADO**, pero si no se encuentra ningún vehículo, el espacio será marcado como **LIBRE**.
 
-Vehículo → HC-SR04 → ESP32 → Wi-Fi → MQTT/Mosquitto → Spring Boot → PostgreSQL → Dashboard
+## **Flujo general del sistema**
 
-## Tecnologías utilizadas
+El sistema funciona mediante el siguiente flujo:
 
-### Hardware
-
-- ESP32
-- Sensor HC-SR04
-- LEDs
-- Resistencias
-- Protoboard
-- Cables Dupont
-- Fuente de alimentación
-
-### Software y comunicación
-
-- Arduino IDE
-- Mosquitto
-- Spring Boot
-- PostgreSQL
-- Frontend web
-- Wi-Fi
-- MQTT
-- HTTP/REST
-
-## Documentación
-
-La documentación detallada de los componentes y de la comunicación del sistema se encuentra en la [Wiki del proyecto](../../wiki).
+~~~mermaid
+flowchart TD
+A[Vehículo] --> B[Sensor / Cámara]
+B --> C[Detección de vehículo]
+C --> D[ESP32 / Sistema de procesamiento]
+D --> E[Clasificación del espacio]
+E --> F{Estado del espacio}
+F --> G[LIBRE]
+F --> H[OCUPADO]
+G --> I[Visualización de disponibilidad]
+H --> I[Visualización de disponibilidad]
+~~~
