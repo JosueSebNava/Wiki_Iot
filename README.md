@@ -111,5 +111,5 @@ Espacio 4 → OCUPADO
 Espacio 5 → LIBRE
 ```
 
-Espacios disponibles: 3
-Espacios ocupados: 2
+1. Espacios disponibles: 3
+2. Espacios ocupados: 2
